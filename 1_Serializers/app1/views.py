@@ -13,8 +13,7 @@ def student_details(request):
     print('ser_data: ', ser_data)
     print('ser_data.data: ', ser_data.data)
 
-    # ser_data_json = JSONRenderer().render(ser_data.data)
-    # print('ser_data_json: ', ser_data_json)
-    #return HttpResponse(ser_data_json, content_type = 'application/json')
-
-    return JsonResponse(ser_data.data, safe=False)
+    ser_data_json = JSONRenderer().render(ser_data.data)
+    print('ser_data_json: ', ser_data_json)
+    return HttpResponse(ser_data_json, content_type = 'application/json')
+    #return JsonResponse(ser_data.data, safe=False)

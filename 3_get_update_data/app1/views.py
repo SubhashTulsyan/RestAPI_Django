@@ -74,6 +74,7 @@ class StudentAPI(View):
             msg = JSONRenderer().render(msg)
             return HttpResponse(msg, 'application/json')
         return HttpResponse(ser.errors, 'application/json')
+        
     def delete(self, request, *args, **kwargs):
         data = request.body
         print('req.body: ', data)
