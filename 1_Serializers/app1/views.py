@@ -1,5 +1,4 @@
-from django.http.response import HttpResponse, JsonResponse
-from django.shortcuts import render
+from django.http.response import HttpResponse
 from .models import Student
 from .serializers import StudentSerializers
 from rest_framework.renderers import JSONRenderer
