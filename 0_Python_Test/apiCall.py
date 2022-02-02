@@ -1,10 +1,13 @@
-import requests
+# import requests
 
-URL = 'http://127.0.0.1:8000/api/students/'
+# URL = 'http://127.0.0.1:8000/api/students/'
 
-res = requests.get(url=URL)
+# res = requests.get(url=URL)
+# print('1111111111111111')
+# print(res.headers)
+# print(res.json())
+# print('1111111111111111')
 
-print(res.json())
 
 # import json
 
@@ -17,10 +20,10 @@ print(res.json())
 #     name="Subhash",
 #     age="21",
 # )
-
+# print('stu_dict:', student.__dict__)
 # to_json_object = json.dumps(student.__dict__, indent=1)
-# print('to_json_object: ', type(to_json_object))
-# #print(student.__dict__)
+# print('to_json_object: ', (to_json_object))
+
 
 # to_python_object = json.loads(to_json_object)
-# print('to_python_object: ', type(to_python_object))
+# print('to_python_object: ', (to_python_object))

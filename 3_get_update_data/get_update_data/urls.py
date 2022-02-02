@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app1 import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    #path('getData/', views.getData, name = 'getData'),
-    path('getData/', views.StudentAPI.as_view(), name = 'getData'),
+    path("admin/", admin.site.urls),
+    # path('getData/', views.getData, name = 'getData'),
+    path("getData/", views.StudentAPI.as_view(), name="getData"),
 ]
